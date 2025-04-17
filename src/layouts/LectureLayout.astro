@@ -1,0 +1,18 @@
+---
+const { frontmatter } = Astro.props;
+---
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{frontmatter.title}</title>
+  </head>
+
+  <body>
+
+    <!-- ... -->
+    <slot />
+    <!-- Markdownコンテンツはここに挿入されます -->
+    <!-- ... -->
+  </body>
+</html>
